@@ -160,9 +160,9 @@ class MPI: ###Mean Point of Impact
             adjustment_y_pix = (self.my-(B.sy))
             print ("adjust x",adjustment_x_pix, "adjust y", adjustment_y_pix) 
             global adj_x_cm
-            adj_x_cm.set(adjustment_x_pix/d_for_scale_lbl.get())
+            adj_x_cm.set("%.2f" %(adjustment_x_pix/d_for_scale_lbl.get()) )
             global adj_y_cm
-            adj_y_cm.set(adjustment_y_pix/d_for_scale_lbl.get())
+            adj_y_cm.set("%.2f" %(adjustment_y_pix/d_for_scale_lbl.get()) )
 
     def __del__(self): 
         print("deleting MPI")

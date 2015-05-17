@@ -20,10 +20,8 @@ Pressing M will toggle the mean point of impact (MPI) and correction displays.
 
 Note that the MPI will need to be toggled on and off in order to update, if changes are made to the shots or cursor (it is planned to make this dynamically update in the future).
 
-Planned corrections/enhancements:
-The x and y aiming corrections display to unwanted levels of precision - I need to change these from their native tkinter IntVar types into an int or float which will then respond to formatting statements.
-
 This is one of my early attempts at OOP and could certainly be improved upon.  I wanted to code something with classes, some calculations, and GUI elements.
 I need to go back through this code and improve things such as separating classes into different files and adopting better naming conventions and formats.
 
-
+-- Minor update 17/05/15
+Changed the correction numbers to 2 dp format (need to use IntVar to communicate with label widget, so the formatting was done when setting the IntVar, rather than trying to reformat the IntVar into something else).
